@@ -1,0 +1,150 @@
+Last login: Tue Feb 13 11:58:32 on console
+macs-MacBook-Pro:~ mac$ git init
+Reinitialized existing Git repository in /Users/mac/.git/
+macs-MacBook-Pro:~ mac$ ls
+Applications		Library			Public
+Desktop			Movies			eclipse-workspace
+Documents		Music
+Downloads		Pictures
+macs-MacBook-Pro:~ mac$ cd desktop
+macs-MacBook-Pro:desktop mac$ cd mc2
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/1.1\ Getting\ Started\ -\ About\ Version\ Control\ copy.txt 
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt 
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/5.1\ Distributed\ Git\ -\ Distributed\ Workflows\ copy.txt 
+macs-MacBook-Pro:mc2 mac$ git rm --cached /Users/mac/Desktop/mc2/3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt 
+rm 'Desktop/mc2/3.1 Git Branching - Branches in a Nutshell.txt'
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt 
+macs-MacBook-Pro:mc2 mac$ git commit -m "vcommit"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.atom/
+	../../.bash_history
+	../../.eclipse/
+	../../.oracle_jre_usage/
+	../../.tooling/
+	../../Applications/
+	../.localized
+	../1.1 Getting Started - About Version Control.txt
+	../5.1 Distributed Git - Distributed Workflows.txt
+	../Atom.app/
+	../Eclipse.app/
+	../GitHub/
+	../Google Chrome
+	../My simply Git Cheatsheet.webarchive
+	../Sublime Text 2.app/
+	../Terminal Saved Output
+	../Terminal Saved Output1
+	AllMyCommands.txt
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+	../../eclipse-workspace/
+
+nothing added to commit but untracked files present
+macs-MacBook-Pro:mc2 mac$ git remote add origin https://github.com/mariamattar/m1.git
+fatal: remote origin already exists.
+macs-MacBook-Pro:mc2 mac$ git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 8.25 KiB | 4.12 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/mariamattar/mariamc2.git
+   c41ba5f..8f36ec7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+macs-MacBook-Pro:mc2 mac$   ls
+1.1 Getting Started - About Version Control copy.txt
+3.1 Git Branching - Branches in a Nutshell.txt
+5.1 Distributed Git - Distributed Workflows copy.txt
+AllMyCommands.txt
+macs-MacBook-Pro:mc2 mac$ git commit -m "vcommit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.atom/
+	../../.bash_history
+	../../.eclipse/
+	../../.oracle_jre_usage/
+	../../.tooling/
+	../../Applications/
+	../.localized
+	../1.1 Getting Started - About Version Control.txt
+	../5.1 Distributed Git - Distributed Workflows.txt
+	../Atom.app/
+	../Eclipse.app/
+	../GitHub/
+	../Google Chrome
+	../My simply Git Cheatsheet.webarchive
+	../Sublime Text 2.app/
+	../Terminal Saved Output
+	../Terminal Saved Output1
+	AllMyCommands.txt
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+	../../eclipse-workspace/
+
+nothing added to commit but untracked files present
+macs-MacBook-Pro:mc2 mac$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+macs-MacBook-Pro:mc2 mac$ git remote add origin https://github.com/mariamattar/m1.git
+fatal: remote origin already exists.
+macs-MacBook-Pro:mc2 mac$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+macs-MacBook-Pro:mc2 mac$ git commit -m "bcommit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.atom/
+	../../.bash_history
+	../../.eclipse/
+	../../.oracle_jre_usage/
+	../../.tooling/
+	../../Applications/
+	../.localized
+	../1.1 Getting Started - About Version Control.txt
+	../5.1 Distributed Git - Distributed Workflows.txt
+	../Atom.app/
+	../Eclipse.app/
+	../GitHub/
+	../Google Chrome
+	../My simply Git Cheatsheet.webarchive
+	../Sublime Text 2.app/
+	../Terminal Saved Output
+	../Terminal Saved Output1
+	AllMyCommands.txt
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+	../../eclipse-workspace/
+
+nothing added to commit but untracked files present
+macs-MacBook-Pro:mc2 mac$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+macs-MacBook-Pro:mc2 mac$ 
