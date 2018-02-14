@@ -147,4 +147,121 @@ nothing added to commit but untracked files present
 macs-MacBook-Pro:mc2 mac$ git push -u origin master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 Everything up-to-date
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/AllMyCommands.txt 
+macs-MacBook-Pro:mc2 mac$ git commit -m "bcommit"
+[master 3919317] bcommit
+ Committer: mac <mac@macs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 150 insertions(+)
+ create mode 100644 Desktop/mc2/AllMyCommands.txt
+macs-MacBook-Pro:mc2 mac$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.40 KiB | 1.40 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mariamattar/mariamc2.git
+   8f36ec7..3919317  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+macs-MacBook-Pro:mc2 mac$ git touch README.md
+git: 'touch' is not a git command. See 'git --help'.
+macs-MacBook-Pro:mc2 mac$ touch README.md
+macs-MacBook-Pro:mc2 mac$ git branch ReadMe
+macs-MacBook-Pro:mc2 mac$ git checkout ReadMe
+Switched to branch 'ReadMe'
+macs-MacBook-Pro:mc2 mac$ git add /Users/mac/Desktop/mc2/README.md 
+macs-MacBook-Pro:mc2 mac$ git commit -m "hcommit"
+[ReadMe a7d164a] hcommit
+ Committer: mac <mac@macs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Desktop/mc2/README.md
+macs-MacBook-Pro:mc2 mac$ git checkout -b ReadMe
+fatal: A branch named 'ReadMe' already exists.
+macs-MacBook-Pro:mc2 mac$ git push origin ReadMe
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 491 bytes | 491.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mariamattar/mariamc2.git
+ * [new branch]      ReadMe -> ReadMe
+macs-MacBook-Pro:mc2 mac$ ls
+1.1 Getting Started - About Version Control copy.txt
+3.1 Git Branching - Branches in a Nutshell.txt
+5.1 Distributed Git - Distributed Workflows copy.txt
+AllMyCommands.txt
+README.md
+macs-MacBook-Pro:mc2 mac$ git checkout ReadMe
+Already on 'ReadMe'
+macs-MacBook-Pro:mc2 mac$ git add README.md
+macs-MacBook-Pro:mc2 mac$ git commit -m "scommit"
+On branch ReadMe
+Untracked files:
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.atom/
+	../../.bash_history
+	../../.eclipse/
+	../../.oracle_jre_usage/
+	../../.tooling/
+	../../Applications/
+	../.localized
+	../1.1 Getting Started - About Version Control.txt
+	../5.1 Distributed Git - Distributed Workflows.txt
+	../Atom.app/
+	../Eclipse.app/
+	../GitHub/
+	../Google Chrome
+	../My simply Git Cheatsheet.webarchive
+	../Sublime Text 2.app/
+	../Terminal Saved Output
+	../Terminal Saved Output1
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+	../../eclipse-workspace/
+
+nothing added to commit but untracked files present
+macs-MacBook-Pro:mc2 mac$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+macs-MacBook-Pro:mc2 mac$ git merge ReadMe
+Updating 3919317..a7d164a
+Fast-forward
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+ Desktop/mc2/README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Desktop/mc2/README.md
+macs-MacBook-Pro:mc2 mac$ 
+
 macs-MacBook-Pro:mc2 mac$ 
